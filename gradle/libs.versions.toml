@@ -19,6 +19,7 @@ locationServiceVer = "17.0.0"
 lifecycleVer = "2.8.7"
 coroutinesVer = "1.10.1"
 easyPermissionVer = "3.0.0"
+lifecycleServiceVer = "2.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -43,6 +44,7 @@ gms-play-service-location = { group = "com.google.android.gms", name = "play-ser
 gms-play-service-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "locationServiceVer" }
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVer" }
 lifecycle-runtime-ktx = { group =  "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleVer" }
+lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycleServiceVer" }
 kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVer" }
 kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVer" }
 easy-permission = { group = "pub.devrel", name = "easypermissions", version.ref = "easyPermissionVer" }
