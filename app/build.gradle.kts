@@ -74,4 +74,6 @@ dependencies {
 
     implementation(libs.kotlin.coroutines.core)
     implementation(libs.kotlin.coroutines.android)
+
+    implementation(libs.easy.permission)
 }

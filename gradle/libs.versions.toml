@@ -18,6 +18,7 @@ glideVer = "4.16.0"
 locationServiceVer = "17.0.0"
 lifecycleVer = "2.8.7"
 coroutinesVer = "1.10.1"
+easyPermissionVer = "3.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,6 +45,7 @@ lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-view
 lifecycle-runtime-ktx = { group =  "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleVer" }
 kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVer" }
 kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVer" }
+easy-permission = { group = "pub.devrel", name = "easypermissions", version.ref = "easyPermissionVer" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

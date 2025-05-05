@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/setupScreen">
+
+    <fragment
+        android:id="@+id/runScreen"
+        android:name="com.duylt.runningchecker.presentation.screen.run.RunScreen"
+        android:label="screen_run"
+        tools:layout="@layout/screen_run" >
+        <action
+            android:id="@+id/action_runScreen_to_trackingScreen"
+            app:destination="@id/trackingScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingScreen"
+        android:name="com.duylt.runningchecker.presentation.screen.settings.SettingScreen"
+        android:label="screen_setting"
+        tools:layout="@layout/screen_setting" />
+    <fragment
+        android:id="@+id/setupScreen"
+        android:name="com.duylt.runningchecker.presentation.screen.setup.SetupScreen"
+        android:label="screen_setup"
+        tools:layout="@layout/screen_setup" >
+        <action
+            android:id="@+id/action_setupScreen_to_runScreen"
+            app:destination="@id/runScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticScreen"
+        android:name="com.duylt.runningchecker.presentation.screen.statistics.StatisticScreen"
+        android:label="screen_statistics"
+        tools:layout="@layout/screen_statistics" />
+    <fragment
+        android:id="@+id/trackingScreen"
+        android:name="com.duylt.runningchecker.presentation.screen.tracking.TrackingScreen"
+        android:label="screen_tracking"
+        tools:layout="@layout/screen_tracking" >
+        <action
+            android:id="@+id/action_trackingScreen_to_runScreen"
+            app:destination="@id/runScreen" />
+    </fragment>
+</navigation>
