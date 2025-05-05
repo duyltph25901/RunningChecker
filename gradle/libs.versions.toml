@@ -1,0 +1,55 @@
+[versions]
+agp = "8.8.0"
+kotlin = "2.0.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+
+navComponentVer = "2.8.9"
+kspVer = "2.0.0-1.0.22"
+roomVer = "2.7.1"
+hiltVer = "2.56.1"
+glideVer = "4.16.0"
+locationServiceVer = "17.0.0"
+lifecycleVer = "2.8.7"
+coroutinesVer = "1.10.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navComponentVer" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navComponentVer" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVer" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVer" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVer" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVer" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltVer" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVer" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVer" }
+gms-play-service-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "locationServiceVer" }
+gms-play-service-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "locationServiceVer" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVer" }
+lifecycle-runtime-ktx = { group =  "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleVer" }
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVer" }
+kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVer" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+jetbrains-kotlin-serialization = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navComponentVer" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "kspVer" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVer" }
+
