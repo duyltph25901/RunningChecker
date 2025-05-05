@@ -5,11 +5,16 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/setupScreen">
 
+    <action
+        android:id="@+id/action_global_trackingScreen"
+        app:destination="@id/trackingScreen"
+        app:launchSingleTop="true" />
+
     <fragment
         android:id="@+id/runScreen"
         android:name="com.duylt.runningchecker.presentation.screen.run.RunScreen"
         android:label="screen_run"
-        tools:layout="@layout/screen_run" >
+        tools:layout="@layout/screen_run">
         <action
             android:id="@+id/action_runScreen_to_trackingScreen"
             app:destination="@id/trackingScreen" />
@@ -23,7 +28,7 @@
         android:id="@+id/setupScreen"
         android:name="com.duylt.runningchecker.presentation.screen.setup.SetupScreen"
         android:label="screen_setup"
-        tools:layout="@layout/screen_setup" >
+        tools:layout="@layout/screen_setup">
         <action
             android:id="@+id/action_setupScreen_to_runScreen"
             app:destination="@id/runScreen" />
@@ -37,7 +42,7 @@
         android:id="@+id/trackingScreen"
         android:name="com.duylt.runningchecker.presentation.screen.tracking.TrackingScreen"
         android:label="screen_tracking"
-        tools:layout="@layout/screen_tracking" >
+        tools:layout="@layout/screen_tracking">
         <action
             android:id="@+id/action_trackingScreen_to_runScreen"
             app:destination="@id/runScreen" />
